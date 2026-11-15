@@ -1,0 +1,314 @@
+.post-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 16px;
+  padding: 16px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.post-form textarea,
+.post-form input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #dfe3e8;
+  border-radius: 8px;
+  outline: none;
+  font: inherit;
+  resize: vertical;
+}
+
+.post-form textarea:focus,
+.post-form input:focus {
+  border-color: #0077ff;
+}
+
+.post-form button {
+  align-self: flex-end;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #0077ff;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.post-form button:hover:not(:disabled) {
+  background: #005bb5;
+}
+
+.post-form button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+
+.post-card {
+  margin-bottom: 12px;
+  padding: 16px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.post-card__head {
+  margin-bottom: 12px;
+}
+
+.post-card__author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+}
+
+.post-card__author-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.post-card__name {
+  font-size: 15px;
+  font-weight: 600;
+  color: #000;
+}
+
+.post-card__name:hover {
+  color: #0077ff;
+}
+
+.post-card__date {
+  font-size: 12px;
+  color: #939aa3;
+}
+
+.post-card__text {
+  margin: 0 0 12px;
+  font-size: 15px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+}
+
+.post-card__image {
+  display: block;
+  width: 100%;
+  max-height: 480px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.post-card__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 10px;
+  border-top: 1px solid #f0f2f5;
+}
+
+.post-card__like {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 8px;
+  background: #f0f2f5;
+  color: #626d7a;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.post-card__like:hover:not(:disabled) {
+  background: #e5eaf0;
+}
+
+.post-card__like:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.post-card__like_active {
+  background: #fdecec;
+  color: #e64646;
+}
+
+.post-card__like_active:hover:not(:disabled) {
+  background: #fbdcdc;
+}
+
+.post-card__comments-toggle {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 8px;
+  background: #f0f2f5;
+  color: #0077ff;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.post-card__comments-toggle:hover {
+  background: #e5eaf0;
+}
+
+.post-card__buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.post-card__delete {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 8px;
+  background: #f0f2f5;
+  color: #e64646;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.post-card__delete:hover:not(:disabled) {
+  background: #fdecec;
+}
+
+.post-card__delete:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #f0f2f5;
+}
+
+.comments__empty {
+  color: #939aa3;
+  font-size: 13px;
+}
+
+.comment {
+  display: flex;
+  gap: 10px;
+}
+
+.comment .user-avatar {
+  width: 36px;
+  height: 36px;
+  font-size: 13px;
+}
+
+.comment__body {
+  flex: 1;
+  min-width: 0;
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: #f7f8fa;
+}
+
+.comment__head {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.comment__name {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.comment__date {
+  font-size: 11px;
+  color: #939aa3;
+}
+
+.comment__text {
+  margin: 4px 0 0;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+}
+
+.comment__delete {
+  margin-left: auto;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: #939aa3;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.comment__delete:hover:not(:disabled) {
+  color: #e64646;
+}
+
+.comment__delete:disabled {
+  cursor: default;
+}
+
+.comment-form {
+  display: flex;
+  gap: 8px;
+}
+
+.comment-form input {
+  flex: 1;
+  padding: 9px 12px;
+  border: 1px solid #dfe3e8;
+  border-radius: 8px;
+  outline: none;
+  font: inherit;
+}
+
+.comment-form input:focus {
+  border-color: #0077ff;
+}
+
+.comment-form button {
+  padding: 9px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #0077ff;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.comment-form button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+@media (max-width: 760px) {
+  .post-form button {
+    align-self: stretch;
+  }
+
+  .post-card__actions {
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,23 @@
+# .NET
+bin/
+obj/
+*.user
+*.suo
+.vs/
+
+# Node
+node_modules/
+dist/
+
+# Локальные настройки и секреты
+.env
+.env.local
+
+# Загруженные аватарки
+backend/user/wwwroot/avatars/*
+
+# IDE
+.idea/
+
+# macOS
+.DS_Store
